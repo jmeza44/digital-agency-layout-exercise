@@ -1,0 +1,116 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove underlines from links within buttons */
+button a {
+  text-decoration: none;
+}
+
+/* Remove default button styles */
+button,
+input[type="button"],
+input[type="submit"] {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Reset form elements */
+input,
+textarea,
+select {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove default styling on form controls */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  appearance: none;
+  border-radius: 0;
+}
+
+/* Reset images to their natural size */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Reset button cursor behavior */
+button {
+  cursor: pointer;
+}
+
+/* Remove input number arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* Remove input range styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Reset anchor color on hover and focus */
+a:hover,
+a:focus {
+  color: inherit;
+}
+
+/* Reset heading margins */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
