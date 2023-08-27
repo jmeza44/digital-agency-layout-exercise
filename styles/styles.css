@@ -10,6 +10,14 @@ footer {
   padding: 0 3em;
 }
 
+@media (max-width: 768px) {
+  header,
+  main,
+  footer {
+    padding: 0 1.5em;
+  }
+}
+
 h1 {
   margin-bottom: 1em;
   font-size: 3em;
@@ -140,7 +148,6 @@ footer > article > ul > li {
   width: fit-content;
   margin: 3em auto;
 }
-
 
 @media (max-width: 768px) {
   #be-a-part-of-the-next-big-thing-banner > div > img {
