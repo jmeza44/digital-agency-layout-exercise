@@ -29,12 +29,14 @@ header {
   justify-content: space-between;
   align-items: end;
   gap: 1em 0;
-  padding: 1em inherit;
+  padding-top: 1em;
   margin-bottom: 3em;
 }
 
-header > nav {
-  height: max-content;
+@media (max-width: 768px) {
+  header > nav {
+    display: none;
+  }
 }
 
 header > nav > ul {
@@ -44,7 +46,8 @@ header > nav > ul {
   gap: 2em;
 }
 
-header > div > h3, header > nav > ul > li {
+header > div > h3,
+header > nav > ul > li {
   margin-bottom: 0;
   cursor: pointer;
 }
@@ -69,6 +72,16 @@ footer > article > ul > li {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3em;
+    margin-top: 5em;
+  }
+}
+
 .banner-with-image {
   display: flex;
   flex-direction: row;
@@ -82,6 +95,26 @@ footer > article > ul > li {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 50%;
+}
+
+@media (max-width: 768px) {
+  .banner-with-image {
+    display: block;
+  }
+
+  .banner-with-image > div {
+    flex-basis: 100%;
+  }
+
+  .banner-with-image > div > .call-to-action-button {
+    margin-top: 3em;
+    margin: 3em auto 0 auto;
+  }
+
+  .banner-with-image-content > h1,
+  p {
+    text-align: center;
+  }
 }
 
 .banner-with-image > div > img {
@@ -101,4 +134,16 @@ footer > article > ul > li {
 
 .banner-with-image > div > .call-to-action-button {
   margin-top: 3em;
+}
+
+.image-as-banner {
+  width: fit-content;
+  margin: 3em auto;
+}
+
+
+@media (max-width: 768px) {
+  #be-a-part-of-the-next-big-thing-banner > div > img {
+    display: none;
+  }
 }
